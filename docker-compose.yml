@@ -1,0 +1,7 @@
+version: '3'
+services:
+  kafka_broker1:
+    container_name: kafka-broker1
+    build: ./docker/kafka
+    volumes:
+      - ./docker/kafka/config:/home/kafka/config
