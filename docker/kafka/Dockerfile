@@ -13,4 +13,4 @@ WORKDIR /home/kafka
 COPY --from=builder /home/work/kafka .
 COPY start-kafka.sh /home/kafka/bin/start-kafka.sh
 
-CMD ["bin/start-kafka.sh"]
+CMD ["sh", "-c", "bin/start-kafka.sh"]
